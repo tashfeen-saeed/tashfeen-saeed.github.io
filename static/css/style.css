@@ -1,0 +1,314 @@
+:root {
+  --text: #222;
+  --muted: #666;
+  --link: #0b5cad;
+  --border: #e5e5e5;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.6;
+  background: white;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 28px 90px;
+}
+
+header {
+  margin-bottom: 22px;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 650;
+    letter-spacing: -0.05em;
+    margin-bottom: 20px;
+}
+
+nav {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 24px;
+}
+
+header p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 19px;
+}
+
+nav a {
+  margin-right: 24px;
+  color: var(--link);
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: none;
+}
+
+main p {
+  margin-top: 0;
+}
+
+.hero {
+  grid-template-columns: 150px 1fr;
+  gap: 42px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    column-gap: 36px;
+    align-items: start;
+    margin-top: 28px;
+    margin-bottom: 0px;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.headshot {
+    width: 270px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 0;
+}
+
+/* Global links */
+a,
+a:visited,
+a:link {
+  color: var(--link);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Section headers */
+.site-nav {
+  margin-top: 18px;
+  border-top: none;
+  padding-top: 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dfe5e3;
+}
+
+/* Section headings and subtle lines */
+.research h2,
+.teaching h2 {
+  font-family: -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-variant: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+
+  margin: 32px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dfe5e3;
+}
+
+/* Paper blocks */
+.paper {
+  margin-bottom: 28px;
+}
+
+.paper h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.paper h3 a,
+.paper h3 a:visited {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.paper h3 a:hover {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.paper-links {
+  font-size: 15px;
+  color: var(--muted);
+  margin: 0 0 10px 0;
+}
+
+.paper-links a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.paper p {
+  margin: 0 0 8px 0;
+}
+
+/* Small uppercase research labels */
+.paper .paper-label {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont,
+               "Segoe UI", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/*Abstracts*/
+.abstract-toggle {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--link);
+  font: inherit;
+  cursor: pointer;
+}
+
+.abstract-toggle:hover {
+  text-decoration: underline;
+}
+
+/* Site header */
+.site-title {
+    margin: 0;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.site-title a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.site-title,
+.site-title a {
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.site-title a:hover {
+    color: var(--text);
+}
+
+.site-nav {
+  margin-top: 10px;
+  padding-top: 0;
+  padding-bottom: 15px;
+  border-top: none;
+  border-bottom: 1px solid #dfe5e3;
+}
+
+.site-nav a {
+  font-family: -apple-system, system-ui, "Segoe UI",
+               Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #555;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+header {
+    margin-bottom: 28px;
+}
+
+/*Teaching*/
+.teaching {
+  max-width: 760px;
+}
+
+.teaching-entry {
+  margin-bottom: 34px;
+}
+
+.teaching-entry h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+}
+
+.teaching-role {
+  color: var(--muted);
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+/* Slightly smaller teaching bullets */
+.teaching-entry ul {
+  margin: 0;
+  padding-left: 1.2em;
+  font-size: 16px;
+}
+
+.teaching-entry li {
+  margin-bottom: 5px;
+}
+
+.teaching-evaluation {
+  margin: 12px 0 0;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.teaching-evaluation strong {
+  color: var(--text);
+}
+
+/* Compact award and service details */
+.teaching-detail {
+  margin-top: 12px;
+  max-width: 680px;
+}
+
+.teaching-award-line,
+.teaching-service-line {
+  margin: 0 0 6px;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.teaching-award-line strong,
+.teaching-service-line strong {
+  font-family: -apple-system, system-ui, "Segoe UI",
+               Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.teaching-award-description {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+}

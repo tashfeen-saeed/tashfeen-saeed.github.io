@@ -1,0 +1,19 @@
+relativeURLs = true
+title = "Tashfeen Saeed"
+sectionPagesMenu = "main"
+defaultContentLanguage = "en"
+
+[params]
+shortbio = "Ph.D. Candidate in Economics, Cornell University"
+logo = "TashfeenSaeed_1.jpg"
+
+[params.author]
+name = "Tashfeen Saeed"
+homepage = "https://tashfeensaeed.com"
+
+[markup]
+  [markup.highlight]
+    style = "solarized-light"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

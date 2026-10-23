@@ -9,5 +9,6 @@ document.addEventListener("click", function (event) {
   const opening = button.getAttribute("aria-expanded") !== "true";
 
   button.setAttribute("aria-expanded", String(opening));
+  button.textContent = opening ? "Hide abstract" : "Abstract";
   abstract.hidden = !opening;
 });
